@@ -1,0 +1,64 @@
+.container {
+    position: relative;
+    height: 400px;
+    background-color: black;
+}
+
+.lever,
+#left,
+#right,
+.triangle,
+.calc {
+    position: absolute;
+    top: 40%;
+}
+
+.lever {
+    height: 3px;
+    background-color: white;
+    width: 30%;
+    border-radius: 10px;
+
+}
+.leftRotate{
+    animation: left 1s ease-in-out 1 forwards;
+}
+.rightRotate{
+    animation: right 1s ease-in-out 1 forwards;
+}
+#left {
+    top: 25%;
+    left: 15%;
+}
+
+#right {
+    top: 25%;
+    right: 15%;
+}
+
+.triangle {
+    top: 38%;
+}
+
+.calc {
+    left: 46.5%;
+    top: 75%;
+}
+
+@keyframes left {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-24deg);
+    }
+}
+
+@keyframes right {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(24deg);
+    }
+}
